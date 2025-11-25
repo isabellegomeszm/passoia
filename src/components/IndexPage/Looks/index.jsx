@@ -1,9 +1,9 @@
 import "./looks.scss"
 import { useNavigate } from "react-router-dom";
-import labios from "../../../assets/card-1.png"
-import olhos from "../../../assets/card-2.png"
-import rosto from "../../../assets/card-3.png"
-import cabelo from "../../../assets/card-4.png"
+import labios from "../../../assets/Card-1.png"
+import olhos from "../../../assets/Card-2.png"
+import rosto from "../../../assets/Card-3.png"
+import cabelo from "../../../assets/Card-4.png"
 
 
 function Looks() {
