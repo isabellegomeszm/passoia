@@ -1,0 +1,84 @@
+.footer{
+    padding: 50px 100px 30px 100px;
+    border-top: solid 3px #e1e1e1;
+}
+
+.footer .container {
+    display: grid;
+    grid-template-columns: 30% 1fr 1fr;
+    justify-content: space-between;
+}
+
+.footer .col-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer li {
+    font-size: 14px;
+    font-weight: 400;
+    text-align: start;
+}
+
+.footer .col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.footer .col-2 .mastercard {
+    width: 60px;
+    height: 40px;
+}
+
+.footer .col-2 .visa {
+    width: 70px;
+    height: auto;
+}
+.footer .col-2 .pix {
+    width: 80px;
+    height: auto;
+}
+.footer .col-2 .boleto {
+    width: 70px;
+    height: auto;
+}
+
+.footer .col-3 {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.footer .col-3 img {
+    width: 30px;
+    height: auto;
+    border-radius: 20%;
+}
+
+.footer h4 {
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: 16px;
+    text-align: start;
+}
+
+.pagamentos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    width: 250px;
+}
+
+.sociais {
+    display: flex;
+    gap: 10px;
+}

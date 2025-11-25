@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.novidades{
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.novidades img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.novidades h2 {
+    font-family: "Poppins";
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
