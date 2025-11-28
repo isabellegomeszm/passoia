@@ -1,5 +1,6 @@
 .banner{
     width: 100%;
+    margin-bottom: 50px;
 }
 
 .banner img{
@@ -9,3 +10,8 @@
     display: block;
 }
 
+@media (max-width: 576px) {
+    .banner {
+        margin-bottom: 10px;
+    }
+}

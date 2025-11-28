@@ -1,20 +1,37 @@
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
 .looks{
     padding: 50px;
     text-align: center;
     font-family: "Helvetica";
 }
 
-.looks-conteudo {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-}
-
 .looks h2 {
     font-family: "Poppins";
     font-size: 42px;
     font-weight: 600;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+}
+
+.looks-conteiner{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.looks-conteiner> div {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.looks-conteiner img{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .looks button {
@@ -23,50 +40,55 @@
     color: white;
     border: none;
     background: none;
+    position: absolute;
     bottom: 20px;
-    left: 10px;
+    left: 15px;
     cursor: pointer;
 }
 
 .looks button:hover {
-    color: #605f5f;
+    color: #ae7cb9;
 }
 
-.btn-labios {
-    position: absolute;
+.btn-lips,
+.btn-eyes,
+.btn-face,
+.btn-hair {
+  position: absolute;
 }
 
-.btn-olhos {
-    position: absolute;
+@media (max-width: 992px) {
+  .looks button {
+    font-size: 16px;
+    bottom: 12px;
+    left: 12px;
+  }
 
+  .looks h2 {
+    font-size: 32px;
+  }
 }
 
-.btn-rosto {
-    position: absolute;
+@media (max-width: 576px) {
+  .looks-conteiner{
+    grid-template-columns: 1fr 1fr;
+  }
 
-}
 
-.btn-cabelo {
-    position: absolute;
+  .looks h2 {
+    font-size: 21px;
+  }
 
-}
+  .looks button {
+    font-size: 12px;
+    bottom: 10px;
+    left: 10px;
+  }
 
-.labios {
-    position: relative;
-    align-items: start;
-}
-
-.olhos {
-    position: relative;
-
-}
-
-.rosto {
-    position: relative;
-
-}
-
-.cabelo {
-    position: relative;
-
+ .looks-conteiner img{
+    width: 120px;
+    height: auto;
+    display: block;
+ }
+  
 }

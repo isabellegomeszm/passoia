@@ -13,21 +13,21 @@ import x from "../../../assets/socials-4.png"
 
 function Footer() {
     return(
-        <section className="footer">
-            <div className="container">
+        <footer className="footer">
+            <div className="footer-container">
                 <div className="col-1">
-                    <h4>ATENDIMENTO</h4>
+                    <h4>SERVICES</h4>
                     <ul>
-                        <li>Fale Conosco</li>
-                        <li>Perguntas Frequentes</li>
-                        <li>Meus Pedidos</li>
-                        <li>Nossas Lojas</li>
+                        <li>Contact Us</li>
+                        <li>FAQ</li>
+                        <li>My Orders</li>
+                        <li>Our Stores</li>
                     </ul>
                 </div>
 
                 <div className="col-2">
-                    <h4>FORMAS DE PAGAMENTO</h4>
-                    <div className="pagamentos">
+                    <h4>PAYMENT METHODS</h4>
+                    <div className="payments">
                         <img className="mastercard" src={mastercard} alt="" />
                         <img className="visa" src={visa} alt="" />
                         <img className="pix" src={pix} alt="" />
@@ -36,7 +36,7 @@ function Footer() {
                 </div>
 
                 <div className="col-3">
-                    <h4>SIGA-NOS NAS REDES SOCIAIS</h4>
+                    <h4>FOLLOW US</h4>
                     <div className="sociais">
                         <img src={instagram} alt="" />
                         <img src={facebook} alt="" />
@@ -45,7 +45,7 @@ function Footer() {
                     </div>
                 </div>
             </div>
-        </section>
+        </footer>
     )
 }
 

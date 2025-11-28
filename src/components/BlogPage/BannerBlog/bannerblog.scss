@@ -1,0 +1,56 @@
+.banner-blog{
+    width: 100%;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.banner-blog img{
+    border-top: solid 5px #c1b7d0;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-group {
+    position: relative;
+    z-index: 1;
+}
+
+.banner-group h2 {
+    font-family: "Poppins";
+    position: absolute;
+    font-size: 52px;
+    font-weight: 300;
+    top: 40%;
+    margin-left: 50px;
+}
+
+@media (max-width: 1024px) {
+    .banner-blog {
+        margin-bottom: 10px;
+    }
+
+    .banner-blog h2 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 772px) {
+    .banner-blog {
+        margin-bottom: 10px;
+    }
+
+    .banner-blog h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-blog {
+        margin-bottom: 10px;
+    }
+
+    .banner-blog h2 {
+        font-size: 24px;
+    }
+}

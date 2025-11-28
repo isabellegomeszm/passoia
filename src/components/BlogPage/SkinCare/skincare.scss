@@ -1,0 +1,65 @@
+.glossy-hair {
+    padding: 50px;
+}
+
+.blog-card {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border: 2px solid #e3dcef;
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 300px;
+  transition: max-height 0.35s ease;
+}
+
+.card-content h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.blog-card.expanded {
+  max-height: 2500px;
+}
+
+.card-img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-content {
+    font-family: "Poppins";
+    font-size: 18px;
+    flex: 1;
+}
+
+.text {
+    text-align: justify;
+}
+
+.full-text h4 {
+    margin-top: 30px;
+}
+
+
+.full-text p,
+.full-text ul,
+.full-text li,
+.full-text h4 {
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+.full-text ul {
+  padding-left: 20px;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: #8d6abb;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+}

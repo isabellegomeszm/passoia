@@ -1,34 +1,34 @@
 import "./looks.scss"
 import { useNavigate } from "react-router-dom";
-import labios from "../../../assets/Card-1.png"
-import olhos from "../../../assets/Card-2.png"
-import rosto from "../../../assets/Card-3.png"
-import cabelo from "../../../assets/Card-4.png"
+import lips from "../../../assets/Card-1.png"
+import eyes from "../../../assets/Card-2.png"
+import face from "../../../assets/Card-3.png"
+import hair from "../../../assets/Card-4.png"
 
 
 function Looks() {
     const navigate = useNavigate();
 
     return (
-        <section className="looks">
-            <h2>LOOKS E DICAS</h2>
+        <section id="looks" className="looks">
+            <h2>BEAUTY LOOKS & TIPS</h2>
 
-            <div className="looks-conteudo">    
-                <div className="labios">
-                    <img src={labios} alt="modelo negra passando batom líquido" />
-                    <button className="btn-labios" onClick={() => navigate("/looks?categoria=labios")}>LÁBIOS</button>
+            <div className="looks-conteiner">   
+                <div className="lips">
+                    <img src={lips} alt="Close-up of a lips" />
+                    <button className="btn-lips" onClick={() => navigate("/looks?categoria=lips")}>LIPS</button>
                 </div>
-                <div className="olhos">
-                    <img src={olhos} alt="modelo branca com sombra dourada nos olhos e sobrancelha evidenciados em close" />
-                    <button className="btn-olhos" onClick={() => navigate("/looks?categoria=olhos")}>OLHOS</button>
+                <div className="eyes">
+                    <img src={eyes} alt="Golden eyeshadow and highlighted eyebrows in a close-up" />
+                    <button className="btn-eyes" onClick={() => navigate("/looks?categoria=eyes")}>EYES</button>
                 </div>
-                <div className="rosto">
-                    <img src={rosto} alt="modelo branca utilizando um pincel de base no rosto" />
-                    <button className="btn-rosto" onClick={() => navigate("/looks?categoria=rosto")}>ROSTO</button>
+                <div className="face">
+                    <img src={face} alt="woman applying skincare to her face" />
+                    <button className="btn-face" onClick={() => navigate("/looks?categoria=face")}>FACE</button>
                 </div>
-                <div className="cabelo">
-                    <img src={cabelo} alt="modelo negra passando batom líquido em sua boca" />
-                    <button className="btn-cabelo" onClick={() => navigate("/looks?categoria=tendencias")}>CABELO</button>
+                <div className="hair">
+                    <img src={hair} alt="smiling woman with curly hair" />
+                    <button className="btn-hair" onClick={() => navigate("/looks?categoria=hair")}>HAIR</button>
                 </div>   
             </div>  
      

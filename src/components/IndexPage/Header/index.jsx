@@ -1,26 +1,27 @@
 import "./header.scss"
 import logo from "../../../assets/logo-passoia.png"
 import { HiOutlineShoppingBag } from "react-icons/hi"
-import { useState } from "react"
+import { useNavigate } from "react-router-dom"
 
-function Header() {
-    const [cartCount, setCartCount] = useState(0)
+function Header({ bagCount }) {
+
+    const navigate = useNavigate();
 
     return (
         <header>
-            <img src={logo} alt="logo marca da página" />
+            <img src={logo} alt="Passoia logo" />
             
             <div className="menu-nav">
                 <ul>
-                    <li>LOOKS</li>
-                    <li>PRODUTOS</li>
-                    <li>BLOG</li>
+                    <li onClick={() => navigate("/#looks")}>LOOKS</li>
+                    <li onClick={() => navigate("/products")}>PRODUCTS</li>
+                    <li onClick={() => navigate("/blog")}>BLOG</li>
                 </ul>
 
             
-                <div class="cart">
-                    <HiOutlineShoppingBag className="cart-icon" />
-                    <span class="cart-count">{cartCount}</span>
+                <div className="bag" onClick={() => navigate("/bag")}>
+                    <HiOutlineShoppingBag className="bag-icon" />
+                    <span className="bag-count">{bagCount}</span>
                 </div>
             </div>
 
