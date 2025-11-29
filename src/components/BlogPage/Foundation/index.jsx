@@ -10,7 +10,7 @@ function Foundation() {
     };
 
     return (
-        <section className="glossy-hair">
+        <section id="foundation" className="glossy-hair">
             <div className={`blog-card ${expanded ? "expanded" : ""}`}>
                 <img className="card-img" src={cardblog2} alt="card-img" />
 
@@ -18,7 +18,7 @@ function Foundation() {
                         <h3>The Definitive Guide to Finding Your Perfect Foundation Shade</h3>
 
                         {!expanded && (
-                            <div className="text">
+                            <div className="preview-text">
                                 <p>
                                     Finding the perfect foundation shade can feel overwhelming (undertones), lighting, 
                                     oxidation, and texture all seem to complicate the process. But achieving a seamless 

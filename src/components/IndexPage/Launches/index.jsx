@@ -10,9 +10,9 @@ import red from "../../../assets/red.png";
 import pink from "../../../assets/pink.png";
 import purple from "../../../assets/purple.png";
 import orange from "../../../assets/orange.png";
-import batom1 from "../../../assets/batom-red.png"
-import batom2 from "../../../assets/batom-purple.png"
-import batom3 from "../../../assets/batom-orange.png"
+import batom1 from "../../../assets/liquid-red.png"
+import batom2 from "../../../assets/liquid-purple.png"
+import batom3 from "../../../assets/liquid-orange.png"
 
 function Lauches({ addToBag }){
 
@@ -23,7 +23,7 @@ function Lauches({ addToBag }){
     const handleAddBag = () => {
         
         const product = {
-            name: "Matte Premium Liquid Lipstick",
+            name: "Flawless 16H Matte Liquid Lipstick",
             selectedColor: color,
         };
 

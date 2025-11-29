@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./haircare.scss"
-import cardblog2 from "../../../assets/haircare.png"
+import cardblog3 from "../../../assets/haircare.png"
 
 function HairCare() {
     const [expanded, setExpanded] = useState(false);
@@ -10,23 +10,22 @@ function HairCare() {
     };
 
     return (
-        <section className="glossy-hair">
+        <section id="hair-care" className="glossy-hair">
             <div className={`blog-card ${expanded ? "expanded" : ""}`}>
-                <img className="card-img" src={cardblog2} alt="card-img" />
+                <img className="card-img" src={cardblog3} alt="card-img" />
 
                     <div className="card-content">
-                        <h3>Unlock the Secrets to Shine Glow for Your Hair</h3>
+                        <h3>How to Create a Personalized and Effective Hair Care Routine</h3>
 
                         {!expanded && (
-                            <div className="text">
+                            <div className="preview-text">
                                 <p>
-                                    Who doesn't dream of hair that reflects light like a mirror and moves with a
-                                    lightness that seems to defy gravity? This combination of mirror shine and
-                                    touchable softness is the ultimate symbol of healthy, well-treated hair.
-                                    Achieving this effect may look like magic, but in reality it comes from a 
-                                    smart blend of science, effective products, right techniques and consistent habits. 
-                                    Understanding how the cuticle behaves, and how to keep it aligned, sealed, 
-                                    and hydrated, is the true first step toward glossy...
+                                    Building the perfect hair care routine isn’t about copying trends, it’s about knowing 
+                                    what your hair truly needs. Curl type, porosity, scalp condition, and lifestyle all 
+                                    influence how your hair behaves and what products will actually work. By understanding 
+                                    these factors, you can create a simple, consistent plan that keeps your strands healthier, 
+                                    shinier, and easier to manage day after day. From choosing the right shampoo to balancing 
+                                    hydration, nutrition, and protein, personalizing your routine is the key to real, long-term transformation…
                                 </p>
                             </div>
                          )}
@@ -34,116 +33,81 @@ function HairCare() {
                         {expanded && (
                             <div className="full-text">
                                 <p>
-                                    Who doesn't dream of hair that reflects light like a mirror and moves with a
-                                    lightness that seems to defy gravity? This combination of mirror shine and
-                                    touchable softness is the ultimate symbol of healthy, well-treated hair.
-                                    Achieving this effect may look like magic, but in reality it comes from a 
-                                    smart blend of science, effective products, right techniques and consistent habits. 
-                                    Understanding how the cuticle behaves, and how to keep it aligned, sealed, 
-                                    and hydrated, is the true first step toward glossy, glass-like shine.
+                                    Building the perfect hair care routine isn’t about copying trends, it’s about knowing 
+                                    what your hair truly needs. Curl type, porosity, scalp condition, and lifestyle all 
+                                    influence how your hair behaves and what products will actually work. By understanding 
+                                    these factors, you can create a simple, consistent plan that keeps your strands healthier, 
+                                    shinier, and easier to manage day after day. From choosing the right shampoo to balancing 
+                                    hydration, nutrition, and protein, personalizing your routine is the key to real, long-term transformation.
                                 </p>
 
-                                <h4>1. The Science Behind Shine: Why the Cuticle Is Everything</h4>
+                                <h4>1. Start by Knowing Your Hair Type</h4>
 
                                 <p>
-                                    The ability of your hair to reflect light depends almost entirely on the cuticle, the outermost layer of the strand.
-                                    When cuticles are aligned, smooth, and sealed, they create a glossy surface that behaves like a mirror.
-                                    But when they’re raised, dry, or damaged, light scatters instead of reflecting, resulting in dull, lifeless hair. In other words: <strong>shine is a symptom of healthy cuticles</strong>.  
-                                    And movement depends on <strong>flexibility + hydration</strong>.
+                                    Texture (straight, wavy, curly, coily), thickness (fine, medium, coarse) and
+                                    porosity (low, medium, high) determine how your hair reacts to water, products,
+                                    and styling. Start here — everything else follows.
                                 </p>
 
-                                <h4>2. Deep Hydration: The Foundation of Shine</h4>
+                                <h4>2. Balance: Hydration, Nutrition, Protein</h4>
 
                                 <p>
-                                    Shine starts with water. Hair needs internal hydration to stay flexible, smooth, and capable of reflecting light evenly.
-                                    Dehydrated strands look rough and matte, even if you add oil on top.
-                                </p>
-
-                                <p><strong>Key Hydrating Ingredients:</strong></p>
-                                    <ul>
-                                        <li>D-Panthenol</li>
-                                        <li>Hyaluronic Acid</li>
-                                        <li>Aloe Vera</li>
-                                        <li>Glycerin</li>
-                                    </ul>
-                                <p><strong>How to Apply:  </strong>  
-                                    Use hydrating masks 1–2 times a week, and leave them on long enough for absorption (10–20 minutes).</p>
-
-
-                                <h4>3. Sealing the Cuticles: Where Real Shine Happens</h4>
-
-                                <p>
-                                    After hydration, the next step is sealing the cuticles so the light can bounce off the hair’s surface.
-                                    Lightweight oils and silicones create a smooth, reflective film:
-                                </p>
-
-                                    <ul>
-                                        <li>Argan Oil</li>
-                                        <li>Jojoba Oil</li>
-                                        <li>Grapeseed Oil</li>
-                                        <li>Volatile silicones (great for gloss without heaviness)</li>
-                                    </ul>
-
-                                <p><strong>Pro Tip: </strong>  
-                                Apply these only on the lengths and ends to avoid greasiness.</p>
-
-                                <h4>4. Thermo-Activated Finishers: Shine Boosters</h4>
-                                <p>
-                                    Heat + a good finisher is the secret behind glass-like gloss.  
-                                    With heat, these products melt into the cuticle, sealing it even better.
-                                </p>
-
-                                <p><strong>Use them before blow-drying or flat ironing.</strong></p>
-
-                                <h4>5. Lightweight Products: Avoid Overloading</h4>
-                                <p>
-                                    Heavy creams and thick oils make the hair look flat and dull.  
-                                    If you want shine and movement, choose lightweight textures.
-                                </p>
-
-                                <h4>6. Smart Washing Techniques</h4>
-                                <p>
-                                    The washing step is essential and often overlooked.  
-                                    Hot water opens the cuticles excessively, leading to roughness and frizz.
-                                </p>
-
-                                <h4>7. Friction Control: Protect the Shine You Just Built</h4>
-
-                                <p>
-                                    Friction is one of the biggest enemies of shine. Anything that rubs against your hair can lift the cuticles.
+                                    A healthy routine alternates three pillars:
                                 </p>
                                 <ul>
-                                    <li>Use satin pillowcases.</li>
-                                    <li>Dry hair with microfiber towels or cotton t-shirts.</li>
-                                    <li>Detangle gently from the tips to the roots.</li>
+                                    <li><strong>Hydration</strong> — water balance: aloe, panthenol, glycerin.</li>
+                                    <li><strong>Nutrition</strong> — lipids and softness: oils, butters, emollients.</li>
+                                    <li><strong>Protein</strong> — strength and repair: keratin, amino acids (use with balance).</li>
                                 </ul>
 
-                                <p>
-                                    These small habits drastically improve shine and reduce breakage.
+                                <h4>3. Choose the Right Shampoo and Conditioner</h4>
+
+                                 <p>
+                                    Match shampoo to your scalp (oily vs dry) and conditioner to your strand needs
+                                    (light detangling vs deep nourishment). For curlier hair prefer sulfate-free,
+                                    moisturizing formulations.
                                 </p>
 
-                                <h4>8. Protein Balance: Strength Without Stiffness</h4>
-                                <p>
-                                    Proteins fill damaged areas and reinforce the structure of the hair, but excess protein causes stiffness and dullness.
+                
+                                <h4>4. Treat with Purpose</h4>
+                                 <p>
+                                    Masks, leave-ins and serums are tools — use each for a specific goal (hydration,
+                                    nutrition, or repair). Rotate masks (hydrating vs protein) according to how your
+                                    hair responds.
                                 </p>
 
+
+                                <h4>5. Style According to Texture</h4>
                                 <p>
-                                    Balanced hair = shiny, flexible, and silky.
+                                    Your styling products should amplify your natural texture: gels/creams for curls,
+                                    lightweight serums for wavy/straight hair, richer creams for coarse strands.
                                 </p>
 
-                                <h4>9. Finishing Glosses & Shine Sprays: </h4>
-
+                                <h4>6. Don’t Skip Heat Protection</h4>
                                 <p>
-                                    These products are like a “top coat” for hair, they reflect light, polish the surface, and enhance movement.
+                                    Even if you avoid heat, protect your hair from friction (satin pillowcases,
+                                    microfiber towels) and environmental stressors. Trim regularly to remove split ends.
                                 </p>
 
-                                <p><strong>Best applied: </strong> after styling, lightly over mid-lengths and ends.</p>
-
-                                <h4>10. Regular Trims:</h4>
+                                <h4>7. Be Consistent, Not Perfect</h4>
 
                                 <p>
-                                    Split ends scatter light and create a frizzy, dull appearance.  
-                                    A simple trim every 8–10 weeks keeps hair aligned and shiny from root to tip.
+                                    The best routine is one you will do consistently. Small, intentional habits
+                                    repeated weekly create big changes over months.
+                                </p>
+
+                                <strong>Weekly Example Routine</strong>
+                                    <ol>
+                                        <li>Day 1 — Wash with a gentle cleanser + hydrating mask (10–20 min).</li>
+                                        <li>Day 3 — Co-wash or light cleanse + leave-in for detangling.</li>
+                                        <li>Day 5 — Nourishing oil or conditioner rinse on lengths and ends.</li>
+                                        <li>Daily — light leave-in or serum to refresh and protect.</li>
+                                    </ol>
+                                
+
+                                <p>
+                                    Personalization is the skill: test, observe, adjust. Over time you'll know which
+                                    sequence gives you the healthiest, most beautiful results.
                                 </p>
                                 
                             </div>

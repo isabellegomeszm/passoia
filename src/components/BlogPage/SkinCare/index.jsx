@@ -10,23 +10,21 @@ function SkinCare() {
     };
 
     return (
-        <section className="glossy-hair">
+        <section id="skin-care" className="glossy-hair">
             <div className={`blog-card ${expanded ? "expanded" : ""}`}>
                 <img className="card-img" src={cardblog2} alt="card-img" />
 
                     <div className="card-content">
-                        <h3>Unlock the Secrets to Shine Glow for Your Hair</h3>
+                        <h3>Why You Should Never Skip Cleansing and Primer Before Makeup</h3>
 
                         {!expanded && (
-                            <div className="text">
+                            <div className="preview-text">
                                 <p>
-                                    Who doesn't dream of hair that reflects light like a mirror and moves with a
-                                    lightness that seems to defy gravity? This combination of mirror shine and
-                                    touchable softness is the ultimate symbol of healthy, well-treated hair.
-                                    Achieving this effect may look like magic, but in reality it comes from a 
-                                    smart blend of science, effective products, right techniques and consistent habits. 
-                                    Understanding how the cuticle behaves, and how to keep it aligned, sealed, 
-                                    and hydrated, is the true first step toward glossy...
+                                    A flawless makeup look doesn’t start with foundation, it starts with skin prep.
+                                    Cleansing removes the buildup that interferes with smooth application, while primer
+                                    creates the ideal surface for foundation to glide, grip, and last all day.
+                                    Skipping these two steps is the number one reason makeup cracks, separates, or looks
+                                    patchy within hours...
                                 </p>
                             </div>
                          )}
@@ -34,116 +32,80 @@ function SkinCare() {
                         {expanded && (
                             <div className="full-text">
                                 <p>
-                                    Who doesn't dream of hair that reflects light like a mirror and moves with a
-                                    lightness that seems to defy gravity? This combination of mirror shine and
-                                    touchable softness is the ultimate symbol of healthy, well-treated hair.
-                                    Achieving this effect may look like magic, but in reality it comes from a 
-                                    smart blend of science, effective products, right techniques and consistent habits. 
-                                    Understanding how the cuticle behaves, and how to keep it aligned, sealed, 
-                                    and hydrated, is the true first step toward glossy, glass-like shine.
+                                    A flawless makeup look doesn’t start with foundation, it starts with skin prep.
+                                    Cleansing removes the buildup that interferes with smooth application, while primer
+                                    creates the ideal surface for foundation to glide, grip, and last all day.
+                                    Skipping these two steps is the number one reason makeup cracks, separates, or looks
+                                    patchy within hours.
                                 </p>
 
-                                <h4>1. The Science Behind Shine: Why the Cuticle Is Everything</h4>
+                                <h4>1. Cleansing: Removing What Your Skin Doesn’t Need</h4>
 
                                 <p>
-                                    The ability of your hair to reflect light depends almost entirely on the cuticle, the outermost layer of the strand.
-                                    When cuticles are aligned, smooth, and sealed, they create a glossy surface that behaves like a mirror.
-                                    But when they’re raised, dry, or damaged, light scatters instead of reflecting, resulting in dull, lifeless hair. In other words: <strong>shine is a symptom of healthy cuticles</strong>.  
-                                    And movement depends on <strong>flexibility + hydration</strong>.
+                                    Throughout the day (and night), your skin accumulates oil, sweat, pollution,
+                                    sunscreen, and product residue. Even if it doesn’t look dirty, this buildup creates
+                                    an uneven surface that makes foundation slide and cling to texture.
                                 </p>
 
-                                <h4>2. Deep Hydration: The Foundation of Shine</h4>
-
-                                <p>
-                                    Shine starts with water. Hair needs internal hydration to stay flexible, smooth, and capable of reflecting light evenly.
-                                    Dehydrated strands look rough and matte, even if you add oil on top.
-                                </p>
-
-                                <p><strong>Key Hydrating Ingredients:</strong></p>
-                                    <ul>
-                                        <li>D-Panthenol</li>
-                                        <li>Hyaluronic Acid</li>
-                                        <li>Aloe Vera</li>
-                                        <li>Glycerin</li>
-                                    </ul>
-                                <p><strong>How to Apply:  </strong>  
-                                    Use hydrating masks 1–2 times a week, and leave them on long enough for absorption (10–20 minutes).</p>
-
-
-                                <h4>3. Sealing the Cuticles: Where Real Shine Happens</h4>
-
-                                <p>
-                                    After hydration, the next step is sealing the cuticles so the light can bounce off the hair’s surface.
-                                    Lightweight oils and silicones create a smooth, reflective film:
-                                </p>
-
-                                    <ul>
-                                        <li>Argan Oil</li>
-                                        <li>Jojoba Oil</li>
-                                        <li>Grapeseed Oil</li>
-                                        <li>Volatile silicones (great for gloss without heaviness)</li>
-                                    </ul>
-
-                                <p><strong>Pro Tip: </strong>  
-                                Apply these only on the lengths and ends to avoid greasiness.</p>
-
-                                <h4>4. Thermo-Activated Finishers: Shine Boosters</h4>
-                                <p>
-                                    Heat + a good finisher is the secret behind glass-like gloss.  
-                                    With heat, these products melt into the cuticle, sealing it even better.
-                                </p>
-
-                                <p><strong>Use them before blow-drying or flat ironing.</strong></p>
-
-                                <h4>5. Lightweight Products: Avoid Overloading</h4>
-                                <p>
-                                    Heavy creams and thick oils make the hair look flat and dull.  
-                                    If you want shine and movement, choose lightweight textures.
-                                </p>
-
-                                <h4>6. Smart Washing Techniques</h4>
-                                <p>
-                                    The washing step is essential and often overlooked.  
-                                    Hot water opens the cuticles excessively, leading to roughness and frizz.
-                                </p>
-
-                                <h4>7. Friction Control: Protect the Shine You Just Built</h4>
-
-                                <p>
-                                    Friction is one of the biggest enemies of shine. Anything that rubs against your hair can lift the cuticles.
-                                </p>
+                                <p><strong>What proper cleansing does:</strong></p>
                                 <ul>
-                                    <li>Use satin pillowcases.</li>
-                                    <li>Dry hair with microfiber towels or cotton t-shirts.</li>
-                                    <li>Detangle gently from the tips to the roots.</li>
+                                    <li>Removes dirt and excess oil that interfere with makeup adhesion.</li>
+                                    <li>Prevents clogged pores and texture from showing under foundation.</li>
+                                    <li>Leaves the skin fresh, smooth, and balanced — the perfect base.</li>
                                 </ul>
 
-                                <p>
-                                    These small habits drastically improve shine and reduce breakage.
+
+                                <h4>2. Why Primer Is Essential</h4>
+
+                                 <p>
+                                    Primer acts as a bridge between skincare and makeup. It creates a silky, even
+                                    surface that helps foundation apply smoothly and stay in place — especially in heat,
+                                    humidity, or long events.
                                 </p>
 
-                                <h4>8. Protein Balance: Strength Without Stiffness</h4>
+                                <p><strong>What primer does:</strong></p>
+                                <ul>
+                                    <li>Smooths pores, lines, and uneven texture.</li>
+                                    <li>Controls excess shine for oily/combo skin.</li>
+                                    <li>Prevents foundation from oxidizing or shifting.</li>
+                                    <li>Improves durability — makeup lasts hours longer.</li>
+                                </ul>
+
+                                <h4>3. Choosing the Right Primer for Your Skin Type</h4>
+
+                                <ul>
+                                    <li><strong>Oily skin:</strong> mattifying, oil-control primers.</li>
+                                    <li><strong>Dry skin:</strong> hydrating primers with hyaluronic acid.</li>
+                                    <li><strong>Textured skin:</strong> blurring or pore-filling formulas.</li>
+                                    <li><strong>Redness-prone skin:</strong> green-toned color-correcting primers.</li>
+                                </ul>
+
+
+                                <h4>4. How Cleansing + Primer Transform Your Makeup</h4>
                                 <p>
-                                    Proteins fill damaged areas and reinforce the structure of the hair, but excess protein causes stiffness and dullness.
+                                    When these two steps are done correctly, makeup instantly looks more refined:
                                 </p>
 
+                                <ul>
+                                    <li>Foundation glides instead of tugging.</li>
+                                    <li>Coverage becomes more even and natural.</li>
+                                    <li>Blush and contour blend more seamlessly.</li>
+                                    <li>The skin looks smoother with fewer visible imperfections.</li>
+                                    <li>Your makeup survives heat, sweat, and long days.</li>
+                                </ul>
+
+                                <h4>5. The Ideal Pre-Makeup Routine</h4>
+                                <ol>
+                                    <li>Cleanse with a gentle, non-stripping cleanser.</li>
+                                    <li>Apply a lightweight moisturizer suitable for your skin type.</li>
+                                    <li>Finish with a primer that matches your skin needs.</li>
+                                </ol>
+
+                                
                                 <p>
-                                    Balanced hair = shiny, flexible, and silky.
-                                </p>
-
-                                <h4>9. Finishing Glosses & Shine Sprays: </h4>
-
-                                <p>
-                                    These products are like a “top coat” for hair, they reflect light, polish the surface, and enhance movement.
-                                </p>
-
-                                <p><strong>Best applied: </strong> after styling, lightly over mid-lengths and ends.</p>
-
-                                <h4>10. Regular Trims:</h4>
-
-                                <p>
-                                    Split ends scatter light and create a frizzy, dull appearance.  
-                                    A simple trim every 8–10 weeks keeps hair aligned and shiny from root to tip.
+                                    These small steps take less than two minutes — but they completely elevate the
+                                    quality, smoothness, and durability of your makeup. Preparation isn’t optional:
+                                    it’s the secret behind every polished look.
                                 </p>
                                 
                             </div>

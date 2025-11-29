@@ -10,7 +10,7 @@ function GlossyHair() {
     };
 
     return (
-        <section className="glossy-hair">
+        <section id="glossy-hair" className="glossy-hair">
             <div className={`blog-card ${expanded ? "expanded" : ""}`}>
                 <img className="card-img" src={cardblog1} alt="card-img" />
 
@@ -18,7 +18,7 @@ function GlossyHair() {
                         <h3>Unlock the Secrets to Shine Glow for Your Hair</h3>
 
                         {!expanded && (
-                            <div className="text">
+                            <div className="preview-text">
                                 <p>
                                     Who doesn't dream of hair that reflects light like a mirror and moves with a
                                     lightness that seems to defy gravity? This combination of mirror shine and

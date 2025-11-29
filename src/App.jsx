@@ -2,18 +2,23 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from "react"
 import ScrollToHash from "./ScrollToHash";
 
-import Header from "./components/IndexPage/Header"
-import Banner from "./components/IndexPage/Banner"
-import Looks from "./components/IndexPage/Looks"
-import Launches from "./components/IndexPage/Launches"
-import News from "./components/IndexPage/News"
-import Footer from "./components/IndexPage/Footer"
+import Header from "./components/IndexPage/Header";
+import Banner from "./components/IndexPage/Banner";
+import Looks from "./components/IndexPage/Looks";
+import Launches from "./components/IndexPage/Launches";
+import News from "./components/IndexPage/News";
+import Footer from "./components/IndexPage/Footer";
 import BannerBlog from "./components/BlogPage/BannerBlog";
-import GlossyHair from "./components/BlogPage/GlossyHair"
-import Foundation from "./components/BlogPage/Foundation"
-import Haircare from "./components/BlogPage/HairCare"
-import SkinCare from "./components/BlogPage/SkinCare"
-import CleanHair from "./components/BlogPage/CleanHair"
+import GlossyHair from "./components/BlogPage/GlossyHair";
+import Foundation from "./components/BlogPage/Foundation";
+import Haircare from "./components/BlogPage/HairCare";
+import SkinCare from "./components/BlogPage/SkinCare";
+import CleanHair from "./components/BlogPage/CleanHair";
+import BannerShop from "./components/ShopPage/BannerShop";
+import Products from "./components/ShopPage/Products/products";
+import ProductsData from "./components/ShopPage/ProductsData/products"
+import ProductsCard from "./components/ShopPage/Products/productscard";
+
 
 
 
@@ -72,6 +77,11 @@ function App() {
           element={
             <>
               <Header bagCount={bag.length} />
+              <BannerShop/>
+                <Products
+                  Products={ProductsData}
+                  onAddToCart={addToBag}
+                />
               <Footer/>
             </>
           }
