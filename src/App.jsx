@@ -16,10 +16,7 @@ import SkinCare from "./components/BlogPage/SkinCare";
 import CleanHair from "./components/BlogPage/CleanHair";
 import BannerShop from "./components/ShopPage/BannerShop";
 import Products from "./components/ShopPage/Products/products";
-import ProductsData from "./components/ShopPage/ProductsData/products"
-import ProductsCard from "./components/ShopPage/Products/productscard";
-
-
+import ProductsData from "./components/ShopPage/ProductsData/product"
 
 
 
@@ -79,7 +76,7 @@ function App() {
               <Header bagCount={bag.length} />
               <BannerShop/>
                 <Products
-                  Products={ProductsData}
+                  productsdata={ProductsData}
                   onAddToCart={addToBag}
                 />
               <Footer/>

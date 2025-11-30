@@ -1,14 +1,14 @@
 import "./products.scss";
 import ProductCard from "./productscard";
 
-function Products({ Products, onAddToCart }) {
+function Products({ productsdata, onAddToCart }) {
   return (
     <section className="products-grid">
-      {Products.map((item) => (
+      {productsdata.map((item) => (
         <ProductCard 
           key={item.id} 
           product={item} 
-          onAddToCart={onAddToCart} 
+          addToCart={onAddToCart} 
         />
       ))}
     </section>

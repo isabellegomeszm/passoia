@@ -79,11 +79,11 @@ export const Products = [
     defaultImage: foundation1,
 
     variations: [
-      { id: "10", colorName: "10", image: foundation1 },
-      { id: "20", colorName: "20", image: foundation2 },
-      { id: "30", colorName: "30", image: foundation3 },
-      { id: "40", colorName: "40", image: foundation4 },
-      { id: "50", colorName: "50", image: foundation5 },
+      { id: "10", colorName: "10", colorHex: "#F0D9C6", image: foundation1 },
+      { id: "20", colorName: "20", colorHex: "#E1BD9D", image: foundation2 },
+      { id: "30", colorName: "30", colorHex: "#B59777", image: foundation3 },
+      { id: "40", colorName: "40", colorHex: "#AE845F", image: foundation4 },
+      { id: "50", colorName: "50", colorHex: "#503528ff", image: foundation5 },
     ],
 
     rating: 5
@@ -97,11 +97,11 @@ export const Products = [
     defaultImage: powder1,
 
     variations: [
-      { id: "10", colorName: "10", image: powder1 },
-      { id: "20", colorName: "20", image: powder2 },
-      { id: "30", colorName: "30", image: powder3 },
-      { id: "40", colorName: "40", image: powder4 },
-      { id: "50", colorName: "50", image: powder5 },
+      { id: "10", colorName: "10", colorHex: "#F0D9C6", image: powder1 },
+      { id: "20", colorName: "20", colorHex: "#E1BD9D", image: powder2 },
+      { id: "30", colorName: "30", colorHex: "#B59777", image: powder3 },
+      { id: "40", colorName: "40", colorHex: "#AE845F", image: powder4 },
+      { id: "50", colorName: "50", colorHex: "#463026ff", image: powder5 },
     ],
 
     rating: 5
@@ -115,10 +115,10 @@ export const Products = [
     defaultImage: blush1,
 
     variations: [
-      { id: "rose", colorName: "Dusty Rose", image: blush1 },
-      { id: "purple", colorName: "Royal Violet", image: blush2 },
-      { id: "orange", colorName: "Coral Reef", image: blush3 },
-      { id: "pink", colorName: "Pink Peony", image: blush4 },
+      { id: "rose", colorName: "Dusty Rose", colorHex: "#D7908F", image: blush1 },
+      { id: "purple", colorName: "Royal Violet", colorHex: "#853B88", image: blush2 },
+      { id: "orange", colorName: "Coral Reef", colorHex: "#E56D41", image: blush3 },
+      { id: "pink", colorName: "Pink Peony", colorHex: "#D85B7E", image: blush4 },
     ],
 
     rating: 5
@@ -141,12 +141,12 @@ export const Products = [
     defaultImage: gloss1,
 
     variations: [
-      { id: "transparent", colorName: "Icy Sparkle", image: gloss1 },
-      { id: "peach", colorName: "Seductive Peach", image: gloss2 },
-      { id: "pink", colorName: "Passion Pink", image: gloss3 },
-      { id: "wine", colorName: "Noble Wine", image: gloss4 },
-      { id: "red", colorName: "Desire Red", image: gloss5 },
-      { id: "orange", colorName: "Electric Orange", image: gloss6 },
+      { id: "transparent", colorName: "Icy Sparkle",colorHex: "#EAEAEA", image: gloss1 },
+      { id: "peach", colorName: "Seductive Peach", colorHex: "#CA8B75", image: gloss2 },
+      { id: "pink", colorName: "Passion Pink", colorHex: "#E96D96", image: gloss3 },
+      { id: "wine", colorName: "Noble Wine", colorHex: "#DB665D", image: gloss4 },
+      { id: "red", colorName: "Desire Red", colorHex: "#BA343A", image: gloss5 },
+      { id: "orange", colorName: "Electric Orange", colorHex: "#5F2027", image: gloss6 },
     ],
 
     rating: 4.5
@@ -178,9 +178,9 @@ export const Products = [
     defaultImage: concealer1,
 
     variations: [
-      { id: "claro", colorName: "Ivory", image: concealer1 },
-      { id: "medio", colorName: "Beige", image: concealer2 },
-      { id: "escuro", colorName: "Espresso", image: concealer3 },
+      { id: "claro", colorName: "Ivory", colorHex: "#EFE6D5", image: concealer1 },
+      { id: "medio", colorName: "Beige", colorHex: "#CB906B", image: concealer2 },
+      { id: "escuro", colorName: "Espresso", colorHex: "#77432F", image: concealer3 },
     ],
 
     rating: 4.5
@@ -203,9 +203,9 @@ export const Products = [
     defaultImage: eyeshadowPurple,
 
     variations: [
-      { id: "green", colorName: "Moss Garden", image: eyeshadowGreen },
-      { id: "orange", colorName: "Amber Hour", image: eyeshadowOrange },
-      { id: "purple", colorName: "Mystic Bloom", image: eyeshadowPurple },
+      { id: "green", colorName: "Moss Garden", colorHex: "#13A673", image: eyeshadowGreen },
+      { id: "orange", colorName: "Amber Hour", colorHex: "#DB724B", image: eyeshadowOrange },
+      { id: "purple", colorName: "Mystic Bloom", colorHex: "#8264AB", image: eyeshadowPurple },
     ],
 
     rating: 4.5
@@ -237,10 +237,10 @@ export const Products = [
     defaultImage: liquidRed,
 
     variations: [
-      { id: "red", colorName: "Velvet Kiss", image: liquidRed },
-      { id: "pink", colorName: "Diva Pink", image: liquidPink },
-      { id: "orange2", colorName: "Sunset Vibe", image: liquidOrange },
-      { id: "purple2", colorName: "Plum Noir", image: liquidPurple },
+      { id: "red", colorName: "Velvet Kiss", colorHex: "#881719", image: liquidRed },
+      { id: "pink", colorName: "Diva Pink", colorHex: "#D03984", image: liquidPink },
+      { id: "orange2", colorName: "Sunset Vibe", colorHex: "#AF5331", image: liquidOrange },
+      { id: "purple2", colorName: "Plum Noir", colorHex: "#3B1B27", image: liquidPurple },
     ],
 
     rating: 4.5
@@ -254,13 +254,13 @@ export const Products = [
     defaultImage: bulletBlue,
 
     variations: [
-      { id: "pink", colorName: "Vivid Bloom", image: bulletPink },
-      { id: "nude", colorName: "Almond Cream", image: bulletNude },
-      { id: "rose2", colorName: "Rose Petal", image: bulletRose },
-      { id: "wine2", colorName: "Deep Garnet", image: bulletWine },
-      { id: "blue", colorName: "Midnight Sky", image: bulletBlue },
-      { id: "red", colorName: "Scarlet Lust", image: bulletRed },
-      { id: "lilac", colorName: "Soft Iris", image: bulletPurple },
+      { id: "pink", colorName: "Vivid Bloom", colorHex: "#B72D60", image: bulletPink },
+      { id: "nude", colorName: "Almond Cream", colorHex: "#AD7263", image: bulletNude },
+      { id: "rose2", colorName: "Rose Petal", colorHex: "#A86D6D", image: bulletRose },
+      { id: "wine2", colorName: "Deep Garnet", colorHex: "#7A3336", image: bulletWine },
+      { id: "blue", colorName: "Midnight Sky", colorHex: "#616A7F", image: bulletBlue },
+      { id: "red", colorName: "Scarlet Lust", colorHex: "#A41110", image: bulletRed },
+      { id: "lilac", colorName: "Soft Iris", colorHex: "#82405F", image: bulletPurple },
     ],
 
     rating: 4.5
