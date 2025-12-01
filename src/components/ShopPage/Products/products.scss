@@ -1,8 +1,8 @@
 .products-grid {
   padding: 40px 0;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   justify-items: center;
 }
 
@@ -16,6 +16,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  border: 3px solid #dad6db;
 
   .price {
     margin-top: 10px;

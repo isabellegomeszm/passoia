@@ -50,8 +50,11 @@
 .variation-title {
   font-family: "Poppins";
   font-size: 12px;
-  text-align: start;
+  text-align: center; 
+  width: 100%;  
+  margin: 10px 0; 
 }
+
 
 .selected-name {
   font-family: "Poppins";
@@ -73,7 +76,7 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
-    font-size: 20px;
+    font-size: 16px;
     border: none;
     cursor: pointer;
 }
@@ -96,7 +99,7 @@
 }
 
 .add-btn {
-    width: 200px;
+    width: 100%;
 }
 }
 

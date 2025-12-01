@@ -5,7 +5,7 @@ footer{
 
 .footer-container {
     display: grid;
-    grid-template-columns: 30% 1fr 1fr;
+    grid-template-columns: repeat(3,1fr);
     justify-content: space-between;
 }
 
@@ -90,4 +90,65 @@ footer h4 {
 .sociais {
     display: flex;
     gap: 10px;
+}
+
+@media (max-width:576px){
+    footer{
+    padding: 20px;
+    }
+
+    footer ul {
+        gap: 5px;
+        margin-top: -15px;
+    }
+
+    .footer-container{
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    footer h4 {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    
+footer .col-2 .mastercard {
+    width: 40px;
+    height: 20px;
+}
+
+footer .col-2 .visa {
+    width: 40px;
+    height: auto;
+}
+
+footer .col-2 .pix {
+    width: 40px;
+    height: auto;
+}
+
+footer .col-2 .boleto {
+    width: 40px;
+    height: auto;
+}
+
+    footer .col-1,
+    footer .col-2,
+    footer .col-3 {
+        width: 120px;
+    }
+
+    .payments, .sociais {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+        gap: 8px; /* espaçamento entre os itens */
+        justify-items: center; /* centraliza os ícones */
+        align-items: center;
+        width: 50%;
+    }
+
+    footer .col-3 img {
+    width: 20px;
+    }
 }
