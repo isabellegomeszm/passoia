@@ -5,26 +5,45 @@
 import "./launches.scss"
 import { StarIcon } from '@heroicons/react/24/solid';
 import { useState } from "react";
+import { HiOutlineShoppingBag } from "react-icons/hi"
+import { useBag } from "../../../context/BagContext"
+import { useNavigate } from "react-router-dom";
 
-import red from "../../../assets/red.png";
-import pink from "../../../assets/pink.png";
-import purple from "../../../assets/purple.png";
-import orange from "../../../assets/orange.png";
-import batom1 from "../../../assets/liquid-red.png"
-import batom2 from "../../../assets/liquid-purple.png"
-import batom3 from "../../../assets/liquid-orange.png"
 
-function Lauches({ addToBag }){
+import red from "../../../assets/model-red.png";
+import pink from "../../../assets/model-pink.png";
+import purple from "../../../assets/model-purple.png";
+import orange from "../../../assets/model-orange.png";
+
+import batom1 from "../../../assets/Lipstick-red.png"
+import batom2 from "../../../assets/Lipstick-purple.png"
+import batom3 from "../../../assets/Lipstick-pink.png"
+
+import liquidRed from "../../../assets/liquid-red.png";
+import liquidPink from "../../../assets/liquid-pink.png";
+import liquidOrange from "../../../assets/liquid-orange.png";
+import liquidPurple from "../../../assets/liquid-purple.png";
+
+
+function Lauches(){
+
+    const navigate = useNavigate();
+    
+    const { addToBag } = useBag();
 
     const [color, setcolor] = useState(pink);
-
+    const [productImage, setProductImage] = useState(liquidPink);
+    
     const [alert, setAlert] = useState(false);
 
     const handleAddBag = () => {
         
         const product = {
+            id: 12,
             name: "Flawless 16H Matte Liquid Lipstick",
-            selectedColor: color,
+            price: 69.90,
+            quantity: 1,
+            image: productImage,
         };
 
         addToBag(product);
@@ -63,21 +82,31 @@ function Lauches({ addToBag }){
                         <StarIcon className="star" />
                     </div>
 
-                    <h3>Matte Premium Lipstick</h3>
+                    <h3>Flawless 16H Matte Liquid Lipstick</h3>
+                    <h3><strong>R$ 69.90</strong></h3>
                     <p className="colors">Available colors</p>
 
                     <div className="colors">
-                        <button className="btn-pink"  onClick={() => setcolor(pink)}></button>
-                        <button className="btn-purple" onClick={() => setcolor(purple)}></button>
-                        <button className="btn-orange" onClick={() => setcolor(orange)}></button>
-                        <button className="btn-red" onClick={() => setcolor(red)}></button>
+                        <button className="btn-pink"  onClick={() => {setcolor(pink); setProductImage(liquidPink);}}></button>
+                        <button className="btn-purple" onClick={() => {setcolor(purple); setProductImage(liquidPurple);}}></button>
+                        <button className="btn-orange" onClick={() => {setcolor(orange); setProductImage(liquidOrange);}}></button>
+                        <button className="btn-red" onClick={() => {setcolor(red); setProductImage(liquidRed);}}></button>
                     </div>
                     <p className="description-title">Description</p>
-                    <p className="description">Matte Lipstick has an innovative formula developed to deliver maximum color on the first application with a smooth and soft glide. It has a velvety matte finish and mango butter that helps moisturize and protect lips from dryness. It helps moisturize lips and has a fine, soft texture that does not weigh down the lips.</p>
+                    <p className="description">Flawless 16H Matte Liquid Lipstick has an innovative formula developed to deliver maximum color on the first application with a smooth and soft glide. It has a velvety matte finish and mango butter that helps moisturize and protect lips from dryness. It helps moisturize lips and has a fine, soft texture that does not weigh down the lips.</p>
                 
-                    <button className="btn-add" onClick={handleAddBag}> Add to bag</button>
+                    <div className="btn-icon">
+                      <button className="btn-add" 
+                      onClick={handleAddBag}
+                      > Add to bag
+                      <HiOutlineShoppingBag className="bag-icon" />
+                      </button>
+                    </div>
+                    <button className="more-products" onClick={() => navigate("/products")}><strong>See more products</strong></button>
                 </div>
             </div>
+        
+
         </section>
     );
 }

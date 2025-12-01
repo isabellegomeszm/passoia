@@ -2,10 +2,13 @@ import "./header.scss"
 import logo from "../../../assets/logo-passoia.png"
 import { HiOutlineShoppingBag } from "react-icons/hi"
 import { useNavigate } from "react-router-dom"
+import { useBag } from "../../../context/BagContext";
 
-function Header({ bagCount }) {
+
+function Header() {
 
     const navigate = useNavigate();
+    const { totalItems } = useBag();
 
     return (
         <header>
@@ -21,7 +24,10 @@ function Header({ bagCount }) {
             
                 <div className="bag" onClick={() => navigate("/bag")}>
                     <HiOutlineShoppingBag className="bag-icon" />
-                    <span className="bag-count">{bagCount}</span>
+
+                    {totalItems > 0 && (
+                        <span className="bag-count">{totalItems}</span>
+                    )}
                 </div>
             </div>
 

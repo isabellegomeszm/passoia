@@ -38,9 +38,6 @@ import concealer3 from "../../../assets/concealer-3.png";
 
 // EYESHADOWS
 import eyeshadowNude from "../../../assets/eyeshadow-nude.png";
-import eyeshadowGreen from "../../../assets/eyeshadow-green.png";
-import eyeshadowOrange from "../../../assets/eyeshadow-orange.png";
-import eyeshadowPurple from "../../../assets/eyeshadow-purple.png";
 import eyeshadowMedia from "../../../assets/eyeshadow-media.png";
 import eyeshadow120 from "../../../assets/eyeshadow-120.png";
 
@@ -65,7 +62,7 @@ import brushG from "../../../assets/brush-g.png";
 import bag from "../../../assets/bag.png";
 
 // HAIR LINE
-import shampooCondit from "../../../assets/shampoo-condit.png";
+import shampooCondit from "../../../assets/kit-hair.png";
 import hairMask from "../../../assets/hair-mask.png";
 import leavein500 from "../../../assets/leavein-500.png";
 import leavein300 from "../../../assets/leavein-300.png";
@@ -74,16 +71,15 @@ export const Products = [
   {
     id: 1,
     name: "Flawless 24H High Coverage Foundation",
-    price: 89.90,
     type: "variable",
     defaultImage: foundation1,
 
     variations: [
-      { id: "10", colorName: "10", colorHex: "#F0D9C6", image: foundation1 },
-      { id: "20", colorName: "20", colorHex: "#E1BD9D", image: foundation2 },
-      { id: "30", colorName: "30", colorHex: "#B59777", image: foundation3 },
-      { id: "40", colorName: "40", colorHex: "#AE845F", image: foundation4 },
-      { id: "50", colorName: "50", colorHex: "#503528ff", image: foundation5 },
+      { id: "10", colorName: "10", colorHex: "#F0D9C6", price: 99.90, image: foundation1 },
+      { id: "20", colorName: "20", colorHex: "#E1BD9D", price: 99.90, image: foundation2 },
+      { id: "30", colorName: "30", colorHex: "#B59777", price: 99.90, image: foundation3 },
+      { id: "40", colorName: "40", colorHex: "#AE845F", price: 99.90, image: foundation4 },
+      { id: "50", colorName: "50", colorHex: "#503528ff", price: 99.90, image: foundation5 },
     ],
 
     rating: 5
@@ -92,16 +88,16 @@ export const Products = [
   {
     id: 2,
     name: "Flawless Perfect Blur Compact Powder",
-    price: 79.90,
+    price: 89.90,
     type: "variable",
     defaultImage: powder1,
 
     variations: [
-      { id: "10", colorName: "10", colorHex: "#F0D9C6", image: powder1 },
-      { id: "20", colorName: "20", colorHex: "#E1BD9D", image: powder2 },
-      { id: "30", colorName: "30", colorHex: "#B59777", image: powder3 },
-      { id: "40", colorName: "40", colorHex: "#AE845F", image: powder4 },
-      { id: "50", colorName: "50", colorHex: "#463026ff", image: powder5 },
+      { id: "10", colorName: "10", colorHex: "#F0D9C6", price: 79.90, image: powder1 },
+      { id: "20", colorName: "20", colorHex: "#E1BD9D", price: 79.90, image: powder2 },
+      { id: "30", colorName: "30", colorHex: "#B59777", price: 79.90, image: powder3 },
+      { id: "40", colorName: "40", colorHex: "#AE845F", price: 79.90, image: powder4 },
+      { id: "50", colorName: "50", colorHex: "#463026ff", price: 79.90, image: powder5 },
     ],
 
     rating: 5
@@ -110,15 +106,14 @@ export const Products = [
   {
     id: 3,
     name: "Flawless High Pigment Compact Blush",
-    price: 39.90,
     type: "variable",
     defaultImage: blush1,
 
     variations: [
-      { id: "rose", colorName: "Dusty Rose", colorHex: "#D7908F", image: blush1 },
-      { id: "purple", colorName: "Royal Violet", colorHex: "#853B88", image: blush2 },
-      { id: "orange", colorName: "Coral Reef", colorHex: "#E56D41", image: blush3 },
-      { id: "pink", colorName: "Pink Peony", colorHex: "#D85B7E", image: blush4 },
+      { id: "rose", colorName: "Dusty Rose", colorHex: "#D7908F", price: 59.90, image: blush1 },
+      { id: "purple", colorName: "Royal Violet", colorHex: "#853B88", price: 59.90, image: blush2 },
+      { id: "orange", colorName: "Coral Reef", colorHex: "#E56D41", price: 59.90, image: blush3 },
+      { id: "pink", colorName: "Pink Peony", colorHex: "#D85B7E", price: 59.90, image: blush4 },
     ],
 
     rating: 5
@@ -136,17 +131,16 @@ export const Products = [
   {
     id: 5,
     name: "Flawless Glass Effect Gloss Labial",
-    price: 49.90,
     type: "variable",
     defaultImage: gloss1,
 
     variations: [
-      { id: "transparent", colorName: "Icy Sparkle",colorHex: "#EAEAEA", image: gloss1 },
-      { id: "peach", colorName: "Seductive Peach", colorHex: "#CA8B75", image: gloss2 },
-      { id: "pink", colorName: "Passion Pink", colorHex: "#E96D96", image: gloss3 },
-      { id: "wine", colorName: "Noble Wine", colorHex: "#DB665D", image: gloss4 },
-      { id: "red", colorName: "Desire Red", colorHex: "#BA343A", image: gloss5 },
-      { id: "orange", colorName: "Electric Orange", colorHex: "#5F2027", image: gloss6 },
+      { id: "transparent", colorName: "Icy Sparkle",colorHex: "#EAEAEA", price: 49.90, image: gloss1 },
+      { id: "peach", colorName: "Seductive Peach", colorHex: "#CA8B75", price: 49.90, image: gloss2 },
+      { id: "pink", colorName: "Passion Pink", colorHex: "#E96D96", price: 49.90, image: gloss3 },
+      { id: "wine", colorName: "Noble Wine", colorHex: "#DB665D", price: 49.90, image: gloss4 },
+      { id: "red", colorName: "Desire Red", colorHex: "#BA343A", price: 49.90, image: gloss5 },
+      { id: "orange", colorName: "Electric Orange", colorHex: "#5F2027", price: 49.90, image: gloss6 },
     ],
 
     rating: 4.5
@@ -173,14 +167,13 @@ export const Products = [
   {
     id: 8,
     name: "Flawless Camouflage Effect Stick Concealer",
-    price: 49.90,
     type: "variable",
     defaultImage: concealer1,
 
     variations: [
-      { id: "claro", colorName: "Ivory", colorHex: "#EFE6D5", image: concealer1 },
-      { id: "medio", colorName: "Beige", colorHex: "#CB906B", image: concealer2 },
-      { id: "escuro", colorName: "Espresso", colorHex: "#77432F", image: concealer3 },
+      { id: "claro", colorName: "Ivory", colorHex: "#EFE6D5", price: 49.90, image: concealer1 },
+      { id: "medio", colorName: "Beige", colorHex: "#CB906B", price: 49.90, image: concealer2 },
+      { id: "escuro", colorName: "Espresso", colorHex: "#77432F", price: 49.90, image: concealer3 },
     ],
 
     rating: 4.5
@@ -197,22 +190,6 @@ export const Products = [
 
   {
     id: 10,
-    name: "Flawless High Pigment Eyeshadow Palette (30 colors)",
-    price: 129.90,
-    type: "variable",
-    defaultImage: eyeshadowPurple,
-
-    variations: [
-      { id: "green", colorName: "Moss Garden", colorHex: "#13A673", image: eyeshadowGreen },
-      { id: "orange", colorName: "Amber Hour", colorHex: "#DB724B", image: eyeshadowOrange },
-      { id: "purple", colorName: "Mystic Bloom", colorHex: "#8264AB", image: eyeshadowPurple },
-    ],
-
-    rating: 4.5
-  },
-
-  {
-    id: 11,
     name: "Infinite Glam Eyeshadow Palette (24 colors)",
     price: 129.90,
     type: "simple",
@@ -221,7 +198,7 @@ export const Products = [
   },
 
   {
-    id: 12,
+    id: 11,
     name: "Supreme Glow Professional Eyeshadow Palette (120 colors)",
     price: 289.90,
     type: "simple",
@@ -230,17 +207,35 @@ export const Products = [
   },
 
   {
-    id: 13,
+    id: 12,
     name: "Flawless 16H Matte Liquid Lipstick",
-    price: 69.90,
     type: "variable",
     defaultImage: liquidRed,
 
     variations: [
-      { id: "red", colorName: "Velvet Kiss", colorHex: "#881719", image: liquidRed },
-      { id: "pink", colorName: "Diva Pink", colorHex: "#D03984", image: liquidPink },
-      { id: "orange2", colorName: "Sunset Vibe", colorHex: "#AF5331", image: liquidOrange },
-      { id: "purple2", colorName: "Plum Noir", colorHex: "#3B1B27", image: liquidPurple },
+      { id: "red", colorName: "Velvet Kiss", colorHex: "#881719", price: 49.90, image: liquidRed },
+      { id: "pink", colorName: "Diva Pink", colorHex: "#D03984", price: 49.90, image: liquidPink },
+      { id: "orange2", colorName: "Sunset Vibe", colorHex: "#AF5331", price: 49.90, image: liquidOrange },
+      { id: "purple2", colorName: "Plum Noir", colorHex: "#3B1B27", price: 49.90, image: liquidPurple },
+    ],
+
+    rating: 4.5
+  },
+
+  {
+    id: 13,
+    name: "Flawless Creamy Shine Bullet Lipstick",
+    type: "variable",
+    defaultImage: bulletBlue,
+
+    variations: [
+      { id: "pink", colorName: "Vivid Bloom", colorHex: "#B72D60", price: 49.90, image: bulletPink },
+      { id: "nude", colorName: "Almond Cream", colorHex: "#AD7263", price: 49.90, image: bulletNude },
+      { id: "rose2", colorName: "Rose Petal", colorHex: "#A86D6D", price: 49.90, image: bulletRose },
+      { id: "wine2", colorName: "Deep Garnet", colorHex: "#7A3336", price: 49.90, image: bulletWine },
+      { id: "blue", colorName: "Midnight Sky", colorHex: "#616A7F", price: 49.90, image: bulletBlue },
+      { id: "red", colorName: "Scarlet Lust", colorHex: "#A41110", price: 49.90, image: bulletRed },
+      { id: "lilac", colorName: "Soft Iris", colorHex: "#82405F", price: 49.90, image: bulletPurple },
     ],
 
     rating: 4.5
@@ -248,26 +243,6 @@ export const Products = [
 
   {
     id: 14,
-    name: "Flawless Creamy Shine Bullet Lipstick",
-    price: 59.90,
-    type: "variable",
-    defaultImage: bulletBlue,
-
-    variations: [
-      { id: "pink", colorName: "Vivid Bloom", colorHex: "#B72D60", image: bulletPink },
-      { id: "nude", colorName: "Almond Cream", colorHex: "#AD7263", image: bulletNude },
-      { id: "rose2", colorName: "Rose Petal", colorHex: "#A86D6D", image: bulletRose },
-      { id: "wine2", colorName: "Deep Garnet", colorHex: "#7A3336", image: bulletWine },
-      { id: "blue", colorName: "Midnight Sky", colorHex: "#616A7F", image: bulletBlue },
-      { id: "red", colorName: "Scarlet Lust", colorHex: "#A41110", image: bulletRed },
-      { id: "lilac", colorName: "Soft Iris", colorHex: "#82405F", image: bulletPurple },
-    ],
-
-    rating: 4.5
-  },
-
-  {
-    id: 15,
     name: "Infinite Glam Brush Set (10 pcs)",
     price: 109.90,
     type: "simple",
@@ -276,7 +251,7 @@ export const Products = [
   },
 
   {
-    id: 16,
+    id: 15,
     name: "Soft Dream Nécessaire",
     price: 159.90,
     type: "simple",
@@ -285,7 +260,7 @@ export const Products = [
   },
 
   {
-    id: 17,
+    id: 16,
     name: "Supreme Glow Professional Brush Set (17 pcs)",
     price: 179.90,
     type: "simple",
@@ -294,7 +269,7 @@ export const Products = [
   },
 
   {
-    id: 18,
+    id: 17,
     name: "Luminesse High Shine Shampoo 1L + Conditioner 1L",
     price: 159.90,
     type: "simple",
@@ -303,7 +278,7 @@ export const Products = [
   },
 
   {
-    id: 19,
+    id: 18,
     name: "Luminesse High Shine Hair Mask - 500g",
     price: 179.90,
     type: "simple",
@@ -312,15 +287,14 @@ export const Products = [
   },
 
   {
-    id: 20,
+    id: 19,
     name: "Luminesse High Shine Leave-in Cream",
-    price: 59.90,
     type: "variable",
     defaultImage: leavein500,
 
     variations: [
-      { id: "500", colorName: "Leave-in 500mL", image: leavein500 },
-      { id: "300", colorName: "Leave-in 300mL", image: leavein300 },
+      { id: "500", colorName: "500mL", price: 49.90, image: leavein500 },
+      { id: "300", colorName: "300mL", price: 39.90, image: leavein300 },
     ],
 
     rating: 4.5
