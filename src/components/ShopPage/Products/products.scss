@@ -1,60 +1,233 @@
 .products-grid {
-  padding: 40px 0;
+  padding: 70px 30px 100px 30px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(4, max-content);
+  column-gap: 5px;
+  row-gap: 80px;
   justify-items: center;
+  justify-content: center;
 }
 
 .product-card {
-  background: white;
-  width: 280px;
-  padding: 20px;
-  border-radius: 20px;
-  text-align: center;
+  width: 350px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between; 
+  align-items: stretch;            
+  text-align: left;
+}
+
+.product-card .img-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  }
+
+.product-content {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  flex: 1;
+}
+
+.product-content h4 {
+  font-family: "Poppins";
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 15px;
+  line-height: 1.2;
+}
+
+.rating {
+  display: flex;
+  justify-content: start;
+  width: 100%;
+  margin-top: auto;
+}
+
+.rating .star { 
+  width: 20px; 
+  color: #7a7a7b; 
+}
+
+.color-buttons {
+  display: flex;
+  gap: 8px;
+  margin: 5px;
+}
+
+.color-buttons .color-btn {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  background-color: none;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s ease;
+}
+
+.color-buttons .color-btn:hover { 
+  transform: scale(1.1); 
+}
+
+.color-buttons .color-btn:active { 
+  transform: scale(1.25); 
+}
+
+.variations {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.variation-title {
+  font-family: "Poppins";
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+}
+
+.price {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  white-space: nowrap;
+  width: auto;
+  justify-content: start;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.add-btn, .add-to-cart {
+  width: auto;
+  height: 40px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.add-btn, .add-to-cart:hover { 
+  background-color: #333; 
+}
+
+.add-btn .bag-icon { 
+  width: 25px; 
+  color: white; 
+}
+
+.buy {
+  width: 100%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 3px solid #dad6db;
+  margin-top: auto;
+  padding-top: 5px;
+  gap: auto;
+}
 
-  .price {
-    margin-top: 10px;
-    font-size: 18px;
-    font-weight: bold;
-  }
+.product-card .product-content {
+  flex: 1;
+}
 
-  .add-to-cart {
-    margin-top: 16px;
-    width: 100%;
-    padding: 12px;
-    border: none;
-    background: black;
-    color: white;
-    cursor: pointer;
+.product-card .buy {
+  width: 100%;
+  display: grid !important;
+  grid-template-columns: 1fr auto; 
+  align-items: center;
+  margin-top: auto;
+  padding-top: 6px;
+}
 
-    &:hover {
-      background: #333;
-    }
-  }
+.product-card .buy .price {
+  margin: 0;
+  white-space: nowrap;
+}
+
+.product-card .buy .btn-icon {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.product-card .buy .add-btn {
+  white-space: nowrap;
 }
 
 @media (max-width: 992px){
-.products-grid {
-  padding: 40px 0;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  justify-items: center;
-}
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5px;
+    row-gap: 60px;
+  }
+
+  .product-img {
+    width: 100%;
+  }
+
+  .buy {
+  width: 300px; 
+  }    
 }
 
-@media (max-width: 576px) {
-.products-grid {
-  padding: 40px 0;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 30px;
-  justify-items: center;
+@media (max-width: 576px){
+
+  .products-grid{
+    padding: 50px 10px;
+    grid-template-columns: 1fr;    
+    justify-content: center;
+    row-gap: 70px;
+    column-gap: 1px;
+  }
+
+  .product-card {
+    width: 100%;
+    max-width: 300px;
+    align-items: center;
+  }
+
+  .product-img {
+    width: 300px;
+  }
+
+  .product-content h4 {
+    font-size: 18px;
+  }
+
+  .rating .star { 
+    width: 15px; 
+    color: #7a7a7b; 
+  }
+
+  .buy {
+  width: 200px; 
+  }
+
+  .add-btn .bag-icon { 
+  width: 25px; 
+  color: white; 
 }
 }

@@ -4,6 +4,7 @@
 
 .looks{
     padding: 50px;
+    padding-bottom: 100px;
     text-align: center;
     font-family: "Helvetica";
 }
@@ -32,6 +33,7 @@
     width: 100%;
     height: auto;
     display: block;
+    cursor: pointer;
 }
 
 .looks button {
@@ -48,12 +50,14 @@
 
 .looks button:hover {
     color: #ae7cb9;
+    background-color: transparent;
 }
 
 .btn-lips,
 .btn-eyes,
 .btn-face,
 .btn-hair {
+  background-color: transparent;
   position: absolute;
 }
 

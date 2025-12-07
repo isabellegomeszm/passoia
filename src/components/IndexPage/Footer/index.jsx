@@ -20,8 +20,8 @@ function Footer() {
                     <ul>
                         <li>Contact Us</li>
                         <li>FAQ</li>
-                        <li>My Orders</li>
-                        <li>Our Stores</li>
+                        <li onClick={() => navigate("/bag")}>My Orders</li>
+                        <li onClick={() => navigate("/products")}>Our Store</li>
                     </ul>
                 </div>
 

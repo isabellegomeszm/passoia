@@ -8,14 +8,13 @@
   width: 125%;
   position: absolute;
   z-index: -1;
-  top: 40%;
-  left: -20%;
+  top: 0;
 }
 
 .news{
     width: 100%;
     position: relative;
-    padding-top: 80px;
+    padding-top: 100px;
     padding-bottom: 100px;
     overflow: hidden;
     display: flex;
@@ -27,7 +26,7 @@
     font-family: "Poppins";
     font-size: 42px;
     font-weight: 600;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -35,7 +34,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px; 
+    gap: 100px; 
 }
 
 .news .blog {

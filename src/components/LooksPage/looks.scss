@@ -1,0 +1,57 @@
+.looks-page {
+  padding: 50px;
+}
+
+.looks-page h3{
+  font-family: "Poppins";
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  position: relative;
+  display: inline-block;
+}
+
+.looks-page h3::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: #d8c8ff; /* lilás leve */
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  border-radius: 4px;
+}
+
+
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.video-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.video-card:hover {
+  transform: translateY(-5px);
+}
+
+.video-thumb {
+  width: 100%;
+  display: block;
+}
+
+.video-title {
+  font-family: "Poppins";
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}

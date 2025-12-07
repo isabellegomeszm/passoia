@@ -3,24 +3,66 @@
 
 *{
     padding: 0;
-    margin: 0;
-    
+    margin: 0;   
 }
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: fixed;
+    z-index: 10;
+    background-color: #fefefe;
+    width: 100%;
+    border-bottom: 1px solid #b8b8b8;
+}
+
+.menu-small {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+
+}
+
+.menu-small span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        border-radius: 2px;
+}
+
+
+.menu-mobile {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu-mobile:show{
+        display: flex;
 }
 
 header img {
-    width: 150px;
+    width: 100px;
+    cursor: pointer;
 }
 
 .menu-nav {
     display: flex;
     align-items:center;
+    gap: 10px;
+}
+
+.menu-desktop {
+    display: flex;
     gap: 20px;
 }
 
@@ -32,25 +74,24 @@ header ul{
     flex-wrap: wrap;
     font-family: "Poppins", sans-serif;
     font-size: 18px;
-    // font-family: "Helvetica", "Helvetica Neue", Arial, sans-serif;
-    font-weight: 500;
+    font-weight: 400;
     color:  black;
-    // :hover::before #B79ADC;
 }
 
 header li{
     cursor: pointer;
     transition: .3s;
+}
 
-    &:hover {
+header li:hover {
     color:#B79ADC;
-    }
+}
 
-    &:active {
+header:active {
     color: #B79ADC;
     font-weight: 600;
-    }
 }
+
 
 .bag {
     position: relative;
@@ -59,8 +100,8 @@ header li{
     cursor: pointer;
 }
 
-.bag-icon {
-    width: 28px;
+.bag-icon-header {
+    width: 26px;
     height: auto;
     color: black;
 }
@@ -82,14 +123,39 @@ header li{
     font-family: "Poppins";
 }
 
+
 @media (max-width: 576px) {
+    header {
+        padding: 15px;
+    }
     header img {
         width: 100px;
     }
 
-    ul {
-        font-size: 13px;
-        gap: 5px;
-        width: 40vw;
+    header ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: rgb(247,247,247);
+        padding: 10px 20px;
+        border-radius: 10px;
+        gap: 10px;
+
+        &.show { display: flex; }
     }
+
+    .menu-small {
+        display: flex;
+    }
+    
+    .menu-desktop {
+        display: none;
+    }
+
+    .menu-small {
+        display: flex;
+    }
+
 }

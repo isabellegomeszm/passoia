@@ -1,9 +1,16 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 
 const BagContext = createContext();
 
 function BagProvider({ children }) {
-  const [bag, setBag] = useState([]);
+  const [bag, setBag] = useState(() => {
+    const saved = localStorage.getItem("bag");
+    return saved ? JSON.parse(saved) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("bag", JSON.stringify(bag));
+  }, [bag]);
 
   function addToBag(item) {
     setBag((prev) => {
@@ -60,6 +67,7 @@ function BagProvider({ children }) {
         decreaseQuantity,
         totalPrice,
         totalItems,
+        setBag,
       }}
     >
       {children}

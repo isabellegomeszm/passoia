@@ -1,0 +1,136 @@
+.checkout-page {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 80px 50px;
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-page h3 {
+  font-size: 28px;
+  font-weight: 600;
+  text-align: center;
+  color: black;
+  margin-bottom: 25px;
+}
+
+.checkout-page input.personal,
+.checkout-page input.location,
+.checkout-page input.location-2,
+.checkout-page input.location-3 {
+  padding: 12px 15px;
+  border: 1px solid #E2D6FF;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #292929;
+  background: #E5DCF1;
+  transition: border 0.2s ease;
+  width: 100%;
+}
+
+.checkout-page input:focus {
+  outline: none;
+  border-color: #6A4FB6;
+  box-shadow: 0 0 0 2px rgba(106, 79, 182, 0.15);
+}
+
+.checkout-page input:read-only {
+  background: #e7e2ed;
+  color: #6A4FB6;
+  cursor: not-allowed;
+}
+
+/* -------- DESKTOP -------- */
+
+/* PERSONAL - 2 inputs lado a lado */
+.checkout-page .personal {
+  width: 400px;
+  display: flex;
+  gap: 20px;
+}
+
+/* LOCATION - inputs empilhados */
+.checkout-page .location {
+  width: 400px;
+  display: flex;
+  flex-direction: column; /* << aqui está a pilha */
+  gap: 20px;
+}
+
+/* LOCATION-2 e LOCATION-3 -- duas colunas lado a lado */
+.checkout-page .location-2,
+.checkout-page .location-3 {
+  width: 400px;
+  display: flex;
+  gap: 20px;
+}
+
+.checkout-page .location-2 input,
+.checkout-page .location-3 input {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Botão */
+.checkout-page button {
+  margin-top: 20px;
+  width: 50%;
+  padding: 14px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  background-color: #6A4FB6;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.checkout-page button:hover {
+  background-color: #5842a3;
+}
+
+/* -------- MOBILE -------- */
+@media (max-width: 576px) {
+
+  .checkout-page {
+    padding: 100px 50px;
+  }
+
+  .checkout-page button {
+    font-size: 16px;
+    padding: 12px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .checkout-page .personal,
+  .checkout-page .location {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .checkout-page .location-2,
+  .checkout-page .location-3 {
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .checkout-page .location-2 input,
+  .checkout-page .location-3 input {
+    width: 142px;
+    flex: 1;
+  }
+}

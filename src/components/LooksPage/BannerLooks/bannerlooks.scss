@@ -1,0 +1,58 @@
+.banner-blog-looks{
+    width: 100%;
+    padding-top: 40px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.banner-blog-looks img{
+    border-top: solid 5px #c1b7d0;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner-group-looks {
+    position: relative;
+    z-index: 1;
+}
+
+.banner-group-looks h2 {
+    font-family: "Poppins";
+    position: absolute;
+    font-size: 48px;
+    font-weight: 300;
+    top: 40%;
+    margin-left: 50px;
+}
+
+@media (max-width: 1024px) {
+    .banner-group-looks h2 {
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 772px) {
+    .banner-blog-looks {
+        margin-bottom: 10px;
+    }
+
+    .banner-group-looks h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-blog-looks {
+        margin-bottom: 10px;
+        padding-top: 62px;
+    }
+
+    .banner-group-looks h2 {
+        font-size: 21px;
+        margin-left: 30px;
+        max-width: 180px;
+        margin-top: -10px;
+    }
+}

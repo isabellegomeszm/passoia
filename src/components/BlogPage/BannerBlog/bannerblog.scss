@@ -2,6 +2,7 @@
     width: 100%;
     margin-bottom: 50px;
     position: relative;
+    padding-top: 65px;
 }
 
 .banner-blog img{
@@ -48,6 +49,7 @@
 @media (max-width: 576px) {
     .banner-blog {
         margin-bottom: 10px;
+        padding-top: 62px;
     }
 
     .banner-blog h2 {

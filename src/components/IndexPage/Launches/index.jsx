@@ -2,12 +2,12 @@
 // useState ele controla os estados de algo na interface
 //antes do return fica a lógica, após o return fica as tags
 
-import "./launches.scss"
 import { StarIcon } from '@heroicons/react/24/solid';
 import { useState } from "react";
 import { HiOutlineShoppingBag } from "react-icons/hi"
 import { useBag } from "../../../context/BagContext"
 import { useNavigate } from "react-router-dom";
+import "./launches.scss"
 
 
 import red from "../../../assets/model-red.png";
@@ -83,7 +83,7 @@ function Lauches(){
                     </div>
 
                     <h3>Flawless 16H Matte Liquid Lipstick</h3>
-                    <h3><strong>R$ 69.90</strong></h3>
+                    <h3 className="price">R$ 69.90</h3>
                     <p className="colors">Available colors</p>
 
                     <div className="colors">
@@ -93,7 +93,7 @@ function Lauches(){
                         <button className="btn-red" onClick={() => {setcolor(red); setProductImage(liquidRed);}}></button>
                     </div>
                     <p className="description-title">Description</p>
-                    <p className="description">Flawless 16H Matte Liquid Lipstick has an innovative formula developed to deliver maximum color on the first application with a smooth and soft glide. It has a velvety matte finish and mango butter that helps moisturize and protect lips from dryness. It helps moisturize lips and has a fine, soft texture that does not weigh down the lips.</p>
+                    <p className="description">Flawless 16H Matte Liquid Lipstick has an innovative formula developed to deliver maximum color on the first application with a smooth and soft glide. It helps moisturize lips and has a fine, soft texture that does not weigh down the lips.</p>
                 
                     <div className="btn-icon">
                       <button className="btn-add" 

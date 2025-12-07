@@ -1,9 +1,6 @@
-*,
-*::before,
-*::after { box-sizing: border-box; }
-
 .launches{
-    padding: 50px 20px;
+    padding-top: 50px;
+    padding-bottom: 80px;
     text-align: center;
 }
 
@@ -29,7 +26,8 @@
 .col-1 {
     display: flex;
     flex-direction: column;
-    gap:15px;
+    justify-content: center;
+    gap: 15px;
 }
 
 .col-1 img {
@@ -52,8 +50,8 @@
 .col-3 {
     display: flex;
     flex-direction: column;
-    gap: 10px;
     text-align: left;
+    gap: 5px;
     max-height: 400px;
 }
 
@@ -101,46 +99,51 @@
 
 
 .launches h3 {
-    font-family: "Helvetica", "Arial", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 24px;
-    margin-bottom: 2px;
+    font-size: 21px;
+    margin-bottom: 5px;
+}
+
+.launches h3.price {
+    color: #94669e;
+    font-family: "Poppins";
+    font-weight: 700;
 }
 
 p.colors {
-    font-family: "Helvetica", "Arial", sans-serif;
-    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
     margin-bottom: 2px;
-    margin-top: 8px;
 }
 
 
 p.description-title {
-    font-family: "Helvetica", "Arial", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
 
 }
 
 p.description {
     font-family: "Helvetica", "Arial", sans-serif;
     text-align: justify;
-    margin-bottom: auto;
+    margin-bottom: 10px;
     font-size: 14px;
 }
 
 .stars {
     display: flex;
     gap: 2px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
   
-.star {
-    width: 25px;
+.launches .star {
     color: #F1B202;
+    width: 25px;
 }
 
-.btn-add {
+.launches .btn-add {
     background-color: black;
     color: white;
     font-weight: 600;
@@ -150,12 +153,12 @@ p.description {
     align-items: center;
     justify-content: center;
     gap: 30px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .bag-alert {
     background-color: white;
-    color: black;
+    color: rgb(171, 143, 185);
     padding: 20px 20px;
     margin: 10px auto 20px;
     width: fit-content;
@@ -175,12 +178,11 @@ p.description {
 
 .more-products {
     width: 100%;
-    justify-content: end;
+    justify-content: center;
     display: flex;
     background-color: transparent; color: #9f73a9;
     font-size: 16px;
     text-decoration: underline;
-    margin-top: 5px;
     cursor: pointer;
 }
 
@@ -225,6 +227,7 @@ p.description {
     .col-3 {
         max-height: 280px;
         max-width: 280px;
+        gap: 8px;
     }
 
     .launches h3 {
@@ -273,7 +276,7 @@ p.description {
         width: 15px;
     }
 
-    .btn-add {
+    .launches .btn-add {
         max-width: 300px;
         height: 40px;
         font-size: 16px;
@@ -286,9 +289,9 @@ p.description {
 @media (max-width: 576px) {
     .launches {
         padding-left: 2px;
-        padding-right: 10x;
-        padding-top: 50px;
-        padding-bottom: 100px;
+        padding-right: 10px;
+        padding-top: 0;
+        padding-bottom: 50px;
     }
 
     .launches .container{
@@ -313,49 +316,57 @@ p.description {
     .col-3 {
         gap: 5px;
         height: 150px;
+        padding-right: 5px;
     }
 
-    .btn-orange, 
-    .btn-pink,
-    .btn-purple,
-    .btn-red {
-        width: 10px;
-        height: 10px;
+    .colors .btn-pink,
+    .colors .btn-orange,
+    .colors .btn-purple,
+    .colors .btn-red {
+        width: 15px;
+        height: 15px;
+}
+
+    .stars {
+        width: 50px;
     }
 
-    .star {
-        width: 9px;
-    }
-
-    .btn-add {
+    .launches .btn-add {
         max-width: 300px;
-        height: 40px;
-        font-size: 10px;
+        height: 20px;
+        font-size: 8px;
+        border-radius: 3px;
     }
 
     .col-3 h3 {
         text-align: start;
-        font-size: 9px;
+        font-size: 8px;
+        margin-bottom: 0;
     }
 
     p.colors {
         font-size: 6px;
+        margin-top: -2px;
+        margin-bottom: -2px;
     }
 
     p.description-title {
-        font-family: "Helvetica", "Arial", sans-serif;
-        font-weight: 600;
-        font-size: 8px;
+        font-size: 7px;
+        margin-top: -5px;
+        margin-bottom: -2px;
     }
 
     p.description {
-        font-family: "Helvetica", "Arial", sans-serif;
-        text-align: justify;
         font-size: 6px;
+        margin-bottom: 2px;
     }
 
     .more-products {
-       font-size: 12px;
-       justify-content: center;
+       font-size: 8px;
+       margin-top: -5px;
+    }
+
+    .btn-icon .bag-icon {
+        width: 10px;
     }
 }

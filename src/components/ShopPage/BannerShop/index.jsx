@@ -3,8 +3,8 @@ import bannershop from "../../../assets/banner-products.png"
 
 function BannerShop() {
     return (
-        <section className="banner-blog">
-            <div className="banner-group">
+        <section className="banner-blog-shop">
+            <div className="banner-group-shop">
                 <img src={bannershop} alt="banner" />
                 <h2>PASSOIA SHOP</h2>
             </div>
